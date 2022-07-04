@@ -15,16 +15,196 @@
 */
 
 @import 'color';
-
-body {
-   background: $primary-color-dark;
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-h1 {
-   color: $secondary-text-color;
-   &:hover {
-      background: $primary-color-text;
-      cursor: pointer;
-      border: 1px solid $primary-color;
+.sectionHeader {
+   padding: 16px 0 0 0;
+
+   .sectionInner {
+      width          : 1170px;
+      display        : flex;
+      flex-direction : column;
+      align-items    : center;
+      justify-content: space-between;
+      margin         : 0 auto;
+   }
+
+   .sectionHeader_main {
+      width          : 100%;
+      display        : flex;
+      flex-direction : row;
+      align-items    : center;
+      justify-content: space-between;
+
+      .logo {
+         width: 210px;
+         height: 135px;
+         margin: 0 30px 0 0;
+         img{
+            width: 100%;
+            height: 100%;
+         }
+      }
+
+      .wrap {
+         flex-grow      : 1;
+         display        : flex;
+         flex-direction : column;
+         align-items    : center;
+         justify-content: space-between;
+
+      }
+
+      .sectionHeader_main-firstLine {
+         width          : 100%;
+         display        : flex;
+         flex-direction : row;
+         align-items    : center;
+         justify-content: space-between;
+         width          : 100%;
+         border: none;
+         border-bottom: 1px solid #D7D7D7;
+         margin: 0 0 20px 0;
+         padding: 0 0 8px 0;
+
+         .sectionHeader_main-firstLine-headNav {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+            list-style: none;
+            color: #252525;
+            .headNav-item {
+               margin: 0 25px 0 0;
+               &:last-child{
+                  margin: 0;
+               }
+            }
+
+         }
+
+         .sectionHeader_main-firstLine-signupIn {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+            color: #000;
+
+            .signIn {
+               margin: 0 15px 0 0;
+            }
+
+            .sepparator {
+               display: block;
+               height: 15px;
+               border-left: 1px solid #000;
+            }
+
+            .signUp {
+               margin: 0 0 0 15px;
+            }
+         }
+      }
+
+      .sectionHeader_main-secondLine {
+         display        : flex;
+         flex-direction : row;
+         align-items    : center;
+         justify-content: space-between;
+         width: 100%;
+         &-banner{
+            width: 250px;
+            height: 70px;
+            border: 1px solid red;
+            img{
+               width: 100%;
+               height: 100%;
+            }
+         }
+         &-cartBlock {
+            display        : flex;
+            flex-direction : row;
+            align-items    : center;
+            justify-content: space-between;
+
+            .cartBlock_links {
+               display        : flex;
+               flex-direction : column;
+               align-items    : center;
+               justify-content: space-between;
+
+               .cart {}
+
+               .favorite {}
+
+               .compare {}
+            }
+
+            .cardBlock_itemsOnCart {
+               display        : flex;
+               flex-direction : row;
+               align-items    : center;
+               justify-content: space-between;
+
+               &-item {}
+            }
+         }
+
+         &-workTimeAndContacts {
+            display        : flex;
+            flex-direction : column;
+            align-items    : center;
+            justify-content: space-between;
+            color: #252525;
+            width: 185px;
+            
+
+            .workTime {
+               width: 100%;
+               display        : flex;
+               flex-direction : row;
+               align-items    : center;
+               justify-content: space-between;
+               font-weight: bold;
+               
+               .time {
+                  font-weight: normal;
+               }
+            }
+            
+            .phone {
+               display: inline-block;
+               // width: 100%;
+               color: #252525;
+               font-weight: bold;
+               font-size: 25px;
+               text-align: justify
+
+            }
+            
+            .city {
+               width: 100%;
+               display        : flex;
+               flex-direction : row;
+               align-items    : center;
+               justify-content: space-between;
+
+               .change {}
+            }
+         }
+      }
+   }
+
+   .sectionHeader_nav {
+      display        : flex;
+      flex-direction : row;
+      align-items    : center;
+      justify-content: space-between;
+      width          : 100%;
+
+      &-item {}
    }
 }
-

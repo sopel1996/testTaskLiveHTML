@@ -1,7 +1,7 @@
 {
-  "name": "initial_build",
+  "name": "TestTaskLiveHTML",
   "version": "1.0.0",
-  "description": "initial build for new projects",
+  "description": "Test task on LiveHTML",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
