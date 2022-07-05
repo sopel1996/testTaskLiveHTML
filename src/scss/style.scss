@@ -286,6 +286,7 @@ body{
          font-weight: bold;
          padding: 0 15px;
          color: #fff;
+         transition: all 0.4s;
          &:hover{
             color: #000;
             background-color: $primary-color;
