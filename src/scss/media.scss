@@ -37,6 +37,7 @@ $xxl: 1400px;
     }   
 }
 @media screen and (max-width: 900px) {
+    .sectionHeader_burger .burger-menu_button{display: block;}
     .sectionHeader .sectionHeader_nav{
         flex-direction: column;
         width: 200px;
