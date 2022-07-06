@@ -15,6 +15,7 @@
 */
 
 @import 'color';
+@import 'burger.scss';
 *{
    margin: 0;
    padding: 0;
@@ -23,6 +24,7 @@
 body{
    font-size: 12px;
    font-family: sans-serif;
+   overflow: hidden;
 }
 .sectionHeader {
    padding: 16px 0 0 0;

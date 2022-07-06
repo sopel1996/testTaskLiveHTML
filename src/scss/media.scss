@@ -1,3 +1,10 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
 @media screen and (max-width: 1170px) {
     .sectionHeader .sectionInner{
         width: 100%;
@@ -23,7 +30,7 @@
         margin: 0 10px 0 0 ;
     }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $lg) {
     .sectionHeader .sectionHeader_main .sectionHeader_main-firstLine .sectionHeader_main-firstLine-headNav{
         flex-wrap: wrap;
         margin-right: 20px;
@@ -37,8 +44,14 @@
         align-self: flex-start;
         border-radius: 0 0 10px 10px;
         transition: all 1s;
+        position: absolute;
+        top: 215px;
+        left: -215px;
         
-        
+        &.burger-menu_active{
+            left: 15px;
+            z-index: 999;
+        }
     }
     .sectionHeader .sectionHeader_nav-item:first-child, .sectionHeader .sectionHeader_nav-item:last-child{
         border-radius: 0;
@@ -53,8 +66,65 @@
         height: 35px;
     }
 }
-@media screen and (max-width: 786px) {
-    .sectionHeader .sectionHeader_main .sectionHeader_main-secondLine-cartBlock .cartBlock_links .cart, .sectionHeader .sectionHeader_main .sectionHeader_main-secondLine-cartBlock .cartBlock_links .compare, .sectionHeader .sectionHeader_main .sectionHeader_main-secondLine-cartBlock .cartBlock_links .favorite{
-        content: '';
+@media screen and (max-width: $md) {
+    .sectionHeader_burger{
+        top: 15px;
     }
+    .sectionHeader .sectionHeader_nav{
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+        align-self: flex-start;
+        border-radius: 0 0 10px 10px;
+        transition: all 1s;
+        position: absolute;
+        top: 55px;
+        left: -215px;
+        
+        &.burger-menu_active{
+            left: 15px;
+            z-index: 999;
+        }
+    }
+    .sectionHeader .sectionHeader_main{
+        flex-direction: column;
+    }
+    .sectionHeader .sectionHeader_main .logo{
+        width: 200px;
+    }
+    .sectionHeader .sectionHeader_main .wrap{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .sectionHeader .sectionHeader_main .sectionHeader_main-firstLine,
+    .sectionHeader .sectionHeader_main .sectionHeader_main-secondLine{
+        flex-direction: column-reverse;
+        
+    }
+    .sectionHeader .sectionHeader_main .sectionHeader_main-firstLine{
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        border: none;
+    }
+    .sectionHeader .sectionHeader_main .sectionHeader_main-secondLine{
+        align-items: center;
+        width: auto;
+    }
+    .sectionHeader .sectionHeader_main .sectionHeader_main-firstLine .sectionHeader_main-firstLine-headNav{
+        flex-grow: 1;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 10px 0 0 0;
+    }
+    .sectionHeader .sectionHeader_main .sectionHeader_main-firstLine .sectionHeader_main-firstLine-headNav .headNav-item{
+        padding: 8px 0;
+    }
+    .sectionHeader .sectionHeader_main .sectionHeader_main-secondLine-cartBlock{
+        align-self: flex-start;
+        margin: 20px 0 0 30px;
+    }
+
 }
